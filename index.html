@@ -29,12 +29,11 @@ $(document).on('click', '.toggle-button', function() {
 </script>
 
 <p id="demo">This is a demonstration.</p>
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-$(document).on('click', '.toggle-button', function() {
-    $(this).getElementById("demo").innerHTML = "Hello JavaScript!";
-});
-});
+<script>
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
 </script>
 
 
@@ -43,7 +42,7 @@ $(document).on('click', '.toggle-button', function() {
 
   <div class="center">
     <div class="toggle-button">
-        <button></button>
+        <button onclick="myFunction()">></button>
     </div>
 </div>
 
