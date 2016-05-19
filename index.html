@@ -23,13 +23,12 @@
 $(window).load(function(){
 $(document).on('click', '.toggle-button', function() {
     $(this).toggleClass('toggle-button-selected');
+    $(this).getElementById("demo").innerHTML = "Hello JavaScript!";
 
 });
 });
 </script>
-<header>
-<h1>3</h1>
-</header>
+
 </head>
 
 <body>
@@ -37,6 +36,13 @@ $(document).on('click', '.toggle-button', function() {
     <div class="toggle-button">
         <button></button>
     </div>
+
+
+
+    <p id="demo">This is a demonstration.</p>
+
+
+
 
 </div>
 
