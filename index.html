@@ -5,10 +5,29 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
 
+
+
+
+
+
+
+
+
+
   <script type="text/javascript" src="//code.jquery.com/jquery-git.js"></script>
 
+
+
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-  
+
+
+
+
   <style type="text/css">
         .onoffswitch {
         position: relative; width: 85px;
@@ -77,18 +96,18 @@ $(window).on('load', function() {
 
 <body>
       <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onchange="ballsac()" checked>
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onchange="ballsac(checked)" checked>
         <label class="onoffswitch-label" for="myonoffswitch">
             <span class="onoffswitch-inner"></span>
             <span class="onoffswitch-switch"></span>
         </label>
     </div>
 
-<h1 id="myHeader">Hello World!</h1>
+<h1 id="myHeader">true</h1>
 
 <script>
-function ballsac () {
-document.getElementById("myHeader").innerHTML = "nope";
+function ballsac (checked) {
+document.getElementById("myHeader").innerHTML = checked;
 }
 
 
