@@ -28,22 +28,30 @@ $(document).on('click', '.toggle-button', function() {
 });
 </script>
 
-<p id="demo">This is a demonstration.</p>
+<h1 id="demo">Yes.</h1>
+<h2 id="demo">Yes.</h2>
 
 <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+function myFunction1() {
+    document.getElementById("h1").innerHTML = "No";
+}
+function myFunction2() {
+    document.getElementById("h2").innerHTML = "Maybe";
 }
 </script>
 
-
+<br>
 
 
 
   <div class="center">
     <div class="toggle-button">
-        <button onclick="myFunction()">></button>
+        <button onclick="myFunction1()">></button>
     </div>
+    <div class="toggle-button">
+        <button onclick="myFunction2()">></button>
+    </div>
+
 </div>
 
 </body>
